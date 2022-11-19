@@ -1,0 +1,140 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
+/* banner design*/
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+}
+
+.banner h1 {
+  color: white;
+}
+
+.banner p {
+  color: white;
+  opacity: .7;
+  font-size: 20px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.btn-green {
+  color: white;
+  background: #1CDD87;
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-weight: light;
+}
+
+.btn-green:hover {
+  background-color: black;
+}
+
+/*-- "How it works" section -->*/
+
+.text-center {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230 230 230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: light;
+  opacity: 0.5;
+}
+
+.card img {
+  width: 150px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  background-color: #2C2B2B;
+  padding: 60px;
+}
+
+.footer a {
+  color: #1cdd87;
+  font-size: 30px;
+}
+
+.footer p {
+  color: #cacccc;
+}
+
+.links {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.links > li {
+  display: inline-block;
+  padding: 0px 4px;
+}
+
+
+/* Media Queries */
+@media(max-width: 900px) {
+  .container {
+    width: 500px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+  .cards {
+    justify-content: space-around;
+  }
+}
